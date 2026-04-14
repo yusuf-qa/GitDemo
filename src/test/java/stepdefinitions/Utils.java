@@ -56,6 +56,10 @@ public class Utils {
         return js2.get(key).toString();
     }
 
+    //added by git demo develop branch
+    public void demo() {
+        System.out.println("hello git demo");
+    }
 
 
 }

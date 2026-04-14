@@ -21,5 +21,12 @@ Feature: Validating place API's
     Then the API call got success with status code 200
     And "status" in response body is "OK"
 
+  @Regression1
+  Scenario: Verify if Delete Place functionality is working
+    Given DeletePlace Payload
+    When user calls "deletePlaceAPI" with "POST" https request
+    Then the API call got success with status code 200
+    And "status" in response body is "OK"
+
 
 

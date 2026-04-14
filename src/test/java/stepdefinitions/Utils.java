@@ -48,4 +48,14 @@ public class Utils {
         JsonPath js = new JsonPath(resp);
         return js.get(key).toString();
     }
+
+    //new line of code by GitDemo
+    public String getJsonPath2(Response response, String key) {
+        String resp2 = response.asString();
+        JsonPath js2 = new JsonPath(resp2);
+        return js2.get(key).toString();
+    }
+
+
+
 }
